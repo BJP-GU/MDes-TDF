@@ -2,9 +2,8 @@
 
 ## 9/2: Hello World + Serial Blinking
 ### Code + Serial Blinking
-<img width="1232" height="1976" alt="image" src="https://github.com/user-attachments/assets/90138420-d788-4520-b054-015c2337f5db" />
 
-https://github.com/user-attachments/assets/2bac4975-c0c1-4a36-994f-ffcbb5032728
+https://github.com/user-attachments/assets/11079986-5b01-4e25-a491-b1ba81671e10
 
 Notes:
 I found the exercise to be great for getting back into code and Arduino work. The wheels are turning on how I might implement serial interactions for related to music inputs, lights, and sounds.  
@@ -45,6 +44,8 @@ delay(1000);
 Make “something interesting” happen with:
 1 LEDs + 1 LDR
 2 or more LEDs
+
+https://github.com/user-attachments/assets/6a624b4b-d8bc-4e73-b855-3627fff7e6da
 
 Notes: 
 I used an LDR to detect light sensitivity and turn off and on the two (red / blue) lights. I began with just one light (blue) and then once it was working, I added in the code, wiring, and hardware for the second light (red). Note -- the red light is dim in the video, but is turning on and off. 
