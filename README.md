@@ -5,10 +5,10 @@
 
 https://github.com/user-attachments/assets/11079986-5b01-4e25-a491-b1ba81671e10
 
-Notes:
-I found the exercise to be great for getting back into code and Arduino work. The wheels are turning on how I might implement serial interactions for related to music inputs, lights, and sounds.  
+### Notes:
+I found the exercise to be great for getting back into code and Arduino work. The proverbial, "wheels are starting to trun," on a how I might implement serial outputs related to music, lights, and sounds. For example, could one build a system using the Arduino which transforms noise (db) as an input and light as an output or noise (db) as an input and noise as an output (response). In theory can two Arduio's communicate with sound?
 
-Code: 
+### Code: 
 
 /*
   Hello World
@@ -47,10 +47,10 @@ Make “something interesting” happen with:
 
 https://github.com/user-attachments/assets/6a624b4b-d8bc-4e73-b855-3627fff7e6da
 
-Notes: 
-I used an LDR to detect light sensitivity and turn off and on the two (red / blue) lights. I began with just one light (blue) and then once it was working, I added in the code, wiring, and hardware for the second light (red). Note -- the red light is dim in the video, but is turning on and off. 
+### Notes: 
+I used an LDR to detect light sensitivity and turn off and on the two (red / blue) lights. I began with just one light (blue) and once it was working I added in the code, wiring, and hardware for the second light (red). Note -- the red light is dim in the video, however it is turning on and off as expected. 
 
-Code: 
+### Code: 
 
 const int LDR_Pin = A0;     // LDR connected to analog pin A0
 const int LED_Pin_1 = 9;    // First LED on digital pin 9
