@@ -1,6 +1,6 @@
 # MDes-TDF
 
-## 9/2: Hello World + Serial Blinking
+## Week 2 (9/2): Hello World + Serial Blinking
 ### Code + Serial Blinking
 
 https://github.com/user-attachments/assets/11079986-5b01-4e25-a491-b1ba81671e10
@@ -39,7 +39,7 @@ delay(1000);
 }
 ```
 
-## 9/9: Write  a program to flash the onboard LED while printing Hello World to serial
+## Week 2 (9/9): Write  a program to flash the onboard LED while printing Hello World to serial
 
 ### Experiment and PLAY!
 Make “something interesting” happen with:
