@@ -39,7 +39,7 @@ delay(1000);
 }
 ```
 
-## Week 2 (9/9): Write  a program to flash the onboard LED while printing Hello World to serial
+## Week 3 (9/8): Write  a program to flash the onboard LED while printing Hello World to serial
 
 ### Experiment and PLAY!
 Make “something interesting” happen with:
