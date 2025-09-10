@@ -39,7 +39,7 @@ delay(1000);
 }
 ```
 
-## Week 3 (9/8): Write  a program to flash the onboard LED while printing Hello World to serial
+## Week 3 (9/8): Write a program to flash the onboard LED while printing Hello World to serial
 
 ### Experiment and PLAY!
 Make “something interesting” happen with:
@@ -81,4 +81,30 @@ void loop() {
 }
 
 ```
+## Week 3 (9/10): Designing & Lazer-Printing a Ring
 
+### Using typography to Design a Ring
+Lately, I have been exploring fun typefaces. One which I came across this year is called Hoffman; the namesake of Armin Hoffman. Hoffman Typeface was not created by Armin Hoffman himself, but was inspired by his "Graphic Design Manual." In his manual he conducts an experiment in which he suggests all glyphs can be hand-drawn using circle tangents; later Nguyen and Gobber digitized these methods for broader contemporary use.
+
+Hoffman's Graphic Design Manual (see page 40): http://b.parsons.edu/~dejongo/12-fall/stuff/departmentalReadings/graphic-design-manual-principles-and-practice.pdf
+
+
+### Design Approach
+
+I downloaded a trial of the Hoffman Typeface and used it in Adobe Illustrator to discover letters which might be suitable for a ring. Unsurpisingly I gravitated towards the "O" and the "B." 
+
+To determine the internal size of the ring, I used the digital callipers to measure the internal width of a ring which I currently wear. The size is roughly .725 in or 19mm. for my cut, I used slightly smaller dimensions, since it is easier to remove more material rather than adding material back in. 
+
+<img width="558" height="576" alt="image" src="https://github.com/user-attachments/assets/133b7608-cfa2-40d5-b1d8-6c800144888e" />
+
+![IMG_8902](https://github.com/user-attachments/assets/0c6be577-a4fb-42c5-9b30-1fe16cfe99d8)
+
+### Printing & Constuction
+
+The printing process was relatively smooth. I did however, need to stop the first print and reposition the wood, due to a miscalculation of space.
+
+After printing I opted to combine the two rings -- rotating one by 45 degrees to create an overlapping effect. I also sanded down the rings to refine the wearability and aesthetic. Finally, I used wood glue and a single clamp to fuse the two rings in plance. 
+
+### Result
+
+[Insert Finished Image Here]
