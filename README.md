@@ -10,7 +10,7 @@ I found the exercise to be great for getting back into code and Arduino work. Th
 
 ### Code: 
 
-/*
+```/*
   Hello World
   A "Hello, World!" program generally is a computer program that
 	outputs or displays the message "Hello, World!".
@@ -37,6 +37,7 @@ digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
 //wait 100 milliseconds so we don't drive ourselves crazy
 delay(1000);
 }
+```
 
 ## 9/9: Write  a program to flash the onboard LED while printing Hello World to serial
 
@@ -52,7 +53,7 @@ I used an LDR to detect light sensitivity and turn off and on the two (red / blu
 
 ### Code: 
 
-const int LDR_Pin = A0;     // LDR connected to analog pin A0
+```const int LDR_Pin = A0;     // LDR connected to analog pin A0
 const int LED_Pin_1 = 9;    // First LED on digital pin 9
 const int LED_Pin_2 = 8;    // Second LED on digital pin 8
 
@@ -79,4 +80,5 @@ void loop() {
   delay(100);
 }
 
+```
 
