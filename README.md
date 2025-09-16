@@ -105,6 +105,317 @@ The printing process was relatively smooth. I did however, need to stop the firs
 
 After printing I opted to combine the two rings -- rotating one by 45 degrees to create an overlapping effect. I also sanded down the rings to refine the wearability and aesthetic. Finally, I used wood glue and a single clamp to fuse the two rings in plance. 
 
+### Finishing
+
+In finishing the ring, I learned the valuable lesson of when NOT to take a risk or try something new. Once I had sanded down my "C" shaped ring, I then decided I would use a small drill bit to drill through the top of the "O" to inset a gem-like object. In doing so, I fractured the wood close to the edge of the ring and effectvely runied the smooth aesthetic I was aiming to achieve. I salvaged the ring by cutting out the damage, such that it resembled a "C." The "C" represents, Cal Berkeley. 
+
 ### Result
 
-[Insert Finished Image Here]
+![IMG_8918](https://github.com/user-attachments/assets/25fd2c34-cdcc-463d-9512-dafa6e623451)
+![IMG_8917](https://github.com/user-attachments/assets/0d2f82e8-55e0-42c7-98d8-6404f848c5d4)
+
+
+
+## Week 4 (9/15): Arduino RGB Light, 
+
+## RGB Blinking
+### Code
+
+``` 
+/* 
+
+ Example code for Arduino Tutorial
+  
+    RGB LED connected to pins 9, 10, 11
+
+  We still need to use limiting resistors to keep our LEDs safe
+
+  Generally we use a slightly larger resistor (470 ohm) for the RED component 
+    and the same slightly smaller resistor values (430 ohm) for the GREEN and BLUE components.
+
+  for our circuit let's use:
+  - 470 ohm for RED
+    - color bands -> yellow, purple, black, black, brown
+  - 430 ohm for GREEN and BLUE
+    - color bands -> yellow, orange, black, black, brown
+*/
+
+ 
+// the numbers of the LED pins
+const int redLED = 9;  
+const int greenLED = 10;  
+const int blueLED = 11;  
+
+int delaytime = 500;  // a variable for all delay times
+                      // now we can change them all just by changing this one number!
+ 
+void setup(){
+  pinMode(redLED, OUTPUT);
+  pinMode(greenLED, OUTPUT);
+  pinMode(blueLED, OUTPUT);
+}
+
+// note: full brightness is REALLY bright, so we often start at 50% and increase from there if necessary 
+
+void loop(){
+    analogWrite(redLED, 127);   // turn red on 50%
+    delay(delaytime);           // wait
+    analogWrite(redLED, 0);     // set red to 0%
+    delay(delaytime);           // wait
+
+    analogWrite(greenLED, 127);
+    delay(delaytime);
+    analogWrite(greenLED, 0);
+    delay(delaytime);
+
+    analogWrite(blueLED, 127);
+    delay(delaytime);
+    analogWrite(blueLED, 0);
+    delay(delaytime);
+```
+
+### Result
+
+https://github.com/user-attachments/assets/bb82ce77-663d-40f9-a4d6-e80453cccf98
+
+## RGB Fading
+
+### Code
+
+```
+/*
+Example Code - ST 12/16/2018
+
+single RGB LED - common anode (negative)
+using pins 9, 10, 11
+simple test to fade 3 channels LED
+
+  This example code modified from: https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade
+*/
+
+int brightness = 0;    // how bright the LED is
+int redBrightness = 0;
+int greenBrightness = 0;
+int blueBrightness = 0;
+
+int fadeAmount = 5;    // how many points to fade the LED by
+int redFadeAmount = 1;    
+int greenFadeAmount = 5;    
+int blueFadeAmount = 3;    
+
+const int redLEDPin = 9;     // LED connected to pin 9
+const int greenLEDPin = 10;  // LED connected to pin 10
+const int blueLEDPin = 11;    // LED connected to pin 11
+
+void setup() {
+  // initialize serial communications at 9600 bps:
+  Serial.begin(9600); 
+
+  // set the digital pins as outputs
+  pinMode(greenLEDPin,OUTPUT);
+  pinMode(redLEDPin,OUTPUT);
+  pinMode(blueLEDPin,OUTPUT);
+
+  TestEm();
+}
+
+void loop() {
+  
+// set the brightness of RED - pin 9:
+  analogWrite(redLEDPin, redBrightness);  
+  
+  // change the brightness for next time through the loop:
+  redBrightness = redBrightness + redFadeAmount;
+
+  // reverse the direction of the fading at the ends of the fade: 
+  // range scaled just because: 0-255 changed to 0-100
+  if (redBrightness == 0 || redBrightness == 200) {
+    redFadeAmount = -redFadeAmount ; 
+  }     
+  // wait for 30 milliseconds to see the dimming effect    
+  delay(30); 
+ 
+ // set the brightness of Green - pin 10:
+  analogWrite(greenLEDPin, greenBrightness);  
+  
+  // change the brightness for next time through the loop:
+  greenBrightness = greenBrightness + greenFadeAmount;
+
+  // reverse the direction of the fading at the ends of the fade: 
+  if (greenBrightness == 0 || greenBrightness == 120) {
+    greenFadeAmount = -greenFadeAmount ; 
+  }     
+  // wait for 30 milliseconds to see the dimming effect    
+  delay(10);   
+  
+  // set the brightness of BLUE - pin 11:
+  analogWrite(blueLEDPin, blueBrightness);  
+  
+  // change the brightness for next time through the loop:
+  blueBrightness = blueBrightness + blueFadeAmount;
+
+  // reverse the direction of the fading at the ends of the fade: 
+  if (blueBrightness == 0 || blueBrightness == 255) {
+    blueFadeAmount = -blueFadeAmount ; 
+  }     
+  // wait for 30 milliseconds to see the dimming effect    
+  delay(30); 
+
+
+// Fade;
+}
+
+// ---------------------------------
+void AllOff (){
+  analogWrite(redLEDPin, 0);
+  analogWrite(greenLEDPin, 0);
+  analogWrite(blueLEDPin, 0);
+}
+// ---------------------------------
+
+// ---------------------------------
+void TestEm() {
+  //Test the LED.
+  analogWrite(redLEDPin, 100);
+  delay(300);
+  analogWrite(redLEDPin, 0);
+  delay(300);
+  analogWrite(greenLEDPin, 100);
+  delay(300);
+  analogWrite(greenLEDPin, 0);
+  delay(300);
+  analogWrite(blueLEDPin, 100);
+  delay(300);
+  analogWrite(blueLEDPin, 0);
+  delay(300);
+}
+// ---------------------------------
+
+```
+
+### Result: 
+
+
+https://github.com/user-attachments/assets/e3c76fc5-2858-4d58-97e8-632ec2a18dd3
+
+
+## Button + Light
+
+### Code 
+
+``` 
+/*
+  Button
+
+  Turns on and off a light emitting diode(LED) connected to digital pin 13,
+  when pressing a pushbutton attached to pin 2.
+
+  The circuit:
+  - LED attached from pin 13 to ground through 220 ohm resistor
+  - pushbutton attached to pin 2 from +5V
+  - 10K resistor attached to pin 2 from ground
+
+  - Note: on most Arduinos there is already an LED on the board
+    attached to pin 13.
+
+  created 2005
+  by DojoDave <http://www.0j0.org>
+  modified 30 Aug 2011
+  by Tom Igoe
+
+  This example code is in the public domain.
+
+  https://www.arduino.cc/en/Tutorial/BuiltInExamples/Button
+*/
+
+// constants won't change. They're used here to set pin numbers:
+const int buttonPin = 2;     // the number of the pushbutton pin
+const int ledPin =  13;      // the number of the LED pin
+
+// variables will change:
+int buttonState = 0;         // variable for reading the pushbutton status
+
+void setup() {
+  // initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+}
+
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
+
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if (buttonState == HIGH) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+  } else {
+    // turn LED off:
+    digitalWrite(ledPin, LOW);
+  }
+}
+```
+
+### Result
+
+https://github.com/user-attachments/assets/78308fe6-5b03-421b-9a66-7aa2622b00a6
+
+## Potentiometer 
+### Code
+
+```
+/*
+  Analog Input
+
+  Demonstrates analog input by reading an analog sensor on analog pin 0 and
+  turning on and off a light emitting diode(LED) connected to digital pin 13.
+  The amount of time the LED will be on and off depends on the value obtained
+  by analogRead().
+
+  The circuit:
+  - potentiometer
+    center pin of the potentiometer to the analog input 0
+    one side pin (either one) to ground
+    the other side pin to +5V
+  - LED
+    anode (long leg) attached to digital output 13 through 220 ohm resistor
+    cathode (short leg) attached to ground
+
+  - Note: because most Arduinos have a built-in LED attached to pin 13 on the
+    board, the LED is optional.
+
+  created by David Cuartielles
+  modified 30 Aug 2011
+  By Tom Igoe
+
+  This example code is in the public domain.
+
+  https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogInput
+*/
+
+int sensorPin = A0;    // select the input pin for the potentiometer
+int ledPin = 13;      // select the pin for the LED
+int sensorValue = 1;  // variable to store the value coming from the sensor
+
+void setup() {
+  // declare the ledPin as an OUTPUT:
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);
+  // turn the ledPin on
+  digitalWrite(ledPin, HIGH);
+  // stop the program for <sensorValue> milliseconds:
+  delay(sensorValue);
+  // turn the ledPin off:
+  digitalWrite(ldPin, LOW);
+  // stop the program for for <sensorValue> milliseconds:
+  delay(sensorValue);
+}
+```
+### Result: 
+
+https://github.com/user-attachments/assets/4ad0c9a4-8482-4fff-a961-ded944494ea5
