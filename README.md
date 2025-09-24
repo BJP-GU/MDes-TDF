@@ -295,9 +295,7 @@ void TestEm() {
 
 ### Result: 
 
-
 https://github.com/user-attachments/assets/e3c76fc5-2858-4d58-97e8-632ec2a18dd3
-
 
 ## Button + Light
 
@@ -419,3 +417,40 @@ void loop() {
 ### Result: 
 
 https://github.com/user-attachments/assets/4ad0c9a4-8482-4fff-a961-ded944494ea5
+
+
+## Ring Project, 3D Printed Form 
+
+### Reproducing My Original Ring
+### Fusion Files
+
+<img width="769" height="743" alt="image" src="https://github.com/user-attachments/assets/90ad0bf1-977b-466f-8a94-2ac2c9512848" />
+
+<img width="844" height="740" alt="image" src="https://github.com/user-attachments/assets/45a49fee-fe65-40ef-8770-d790ff4e3e91" />
+
+### Notes/Reflection: 
+Given that we used the Lazer Cutter to create the first variaiton of our rings, I found the process of reproducing it in Fision to be relatively straight forward -- importing the file to fusion as a sketch and extruding the sketch. 
+
+My wood ring broke while I was shaping it after cutting. For the 3D printed ring, I shaped it in Fusion and then printed the exact final version of it; turning out un broken and better looking. I did have to print twice, as I experienced a scaling issue. 
+
+### Making a New Style of Ring
+### Fusion Files
+
+<img width="627" height="705" alt="image" src="https://github.com/user-attachments/assets/9cb3cc0a-42e5-446d-a472-78afc259b09e" />
+
+<img width="760" height="737" alt="image" src="https://github.com/user-attachments/assets/62e4db19-fa2a-4528-942e-dcd977eba430" />
+
+### Notes/Reflection: 
+Strating from scratch in Fusion was more difficult than I anticipated. The sketching process was relatively straightforward, however I faced a fair bit of difficulty achieving the exact form I wanted in Fusion. 
+
+##Iterations (New & Old Ring): 
+
+<img width="884" height="275" alt="image" src="https://github.com/user-attachments/assets/b270c002-a5c4-4db7-98d7-8c7ab2fb6f9c" />
+
+## Week 5 (9/22): Origami Project 
+## Entry 1: 
+
+
+
+
+## Entry 2: 
