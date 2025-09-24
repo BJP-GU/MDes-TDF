@@ -443,7 +443,7 @@ My wood ring broke while I was shaping it after cutting. For the 3D printed ring
 ### Notes/Reflection: 
 Strating from scratch in Fusion was more difficult than I anticipated. The sketching process was relatively straightforward, however I faced a fair bit of difficulty achieving the exact form I wanted in Fusion. 
 
-##Iterations (New & Old Ring): 
+## Iterations (New & Old Ring): 
 
 <img width="884" height="275" alt="image" src="https://github.com/user-attachments/assets/b270c002-a5c4-4db7-98d7-8c7ab2fb6f9c" />
 
