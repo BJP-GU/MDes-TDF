@@ -449,11 +449,27 @@ Strating from scratch in Fusion was more difficult than I anticipated. The sketc
 
 ## Week 5 (9/22): Origami Project 
 ## Entry 1: 
+Early in this week (9/22-9/24) I prototyped the early stages of my origami project; transitioning from sketches, to workable prototypes. I also iterated on my code significantly. 
+
+### Sketches: 
 
 
+### Prototypes:
 
 
-## Entry 2: 
+### Reflections: 
 
 
+## Entry 2:
 ## Project 1: Emotive Origami
+
+# Final Iterations, creating my final form, and the documentation of my hardware and software systems. 
+
+# Pivot to Acrylic: 
+
+# Code and Schematic:
+
+# Reflections on the whole: 
+
+
+
