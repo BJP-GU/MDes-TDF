@@ -463,13 +463,13 @@ Early in this week (9/22-9/24) I prototyped the early stages of my origami proje
 ## Entry 2:
 ## Project 1: Emotive Origami
 
-# Final Iterations, creating my final form, and the documentation of my hardware and software systems. 
+### Final Iterations, creating my final form, and the documentation of my hardware and software systems. 
 
-# Pivot to Acrylic: 
+### Pivot to Acrylic: 
 
-# Code and Schematic:
+### Code and Schematic:
 
-# Reflections on the whole: 
+### Reflections on the whole: 
 
 
 
