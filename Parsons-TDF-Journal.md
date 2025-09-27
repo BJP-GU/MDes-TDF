@@ -449,25 +449,100 @@ Strating from scratch in Fusion was more difficult than I anticipated. The sketc
 
 ## Week 5 (9/22): Origami Project 
 ## Entry 1: 
-Early in this week (9/22-9/24) I prototyped the early stages of my origami project; transitioning from sketches, to workable prototypes. I also iterated on my code significantly. 
+Early in this week (9/22-9/24) I prototyped the early stages of my origami project; transitioning from sketches, to workable prototypes. I also iterated on my code significantly.
+
+Initial 
 
 ### Sketches: 
+Initially I sketchedout a few concepts of what I'd like to do for the Origami assignment; two of which I've linked below. I considered doing the  bed concept, but ultimately I determined that it was too small scale and not in line with the project expectations. In retrospect, I wish I took this direction, since it would have stood out from the rest of the class on the factor of size alone. 
 
+![IMG_9038 2](https://github.com/user-attachments/assets/dae111ea-2830-4479-9fae-16c95551ec39)
 
 ### Prototypes:
+Two very early prototype. Here I was testing that a) the servo had enough leverage to pull the paper, b) what optimal length of the servo arm should be, c) that the servo placement was correct in order to achieve the intended effect. 
 
+https://github.com/user-attachments/assets/72124490-5cad-4a04-9277-22579470c07e
+
+![IMG_8994](https://github.com/user-attachments/assets/474fcdec-db95-41e3-9799-f0ac63aeedbb)
 
 ### Reflections: 
+Prototyping quickly is fun -- especially knowing that this won't be the unltimate form factor. 
 
+I played with a couple of different options for the code in at this stage however, they ultimately proved to be too difficult to implement given the hardware and the intended setting for the piece (our demo). One idea I tried out what an effect which adjusted the waves form based off of proximity to the wave e.g., if someone was 5ft away it the servo would rotate 1/5 of the way to 180 degrees, sequencing in 1/5 increments all the way to <1ft away. Unfortunately, the ultra-sonic sensor senses things in a wide cone, thus I found this almost impossible to work in a setting where many people are in proximity of the wave.
 
 ## Entry 2:
 ## Project 1: Emotive Origami
+
+### Video Demo:
 
 ### Final Iterations, creating my final form, and the documentation of my hardware and software systems. 
 
 ### Pivot to Acrylic: 
 
 ### Code and Schematic:
+
+Code: 
+
+``` #include <Servo.h>
+
+const int trigPin = 7;
+const int echoPin = 6;
+const int servoPin = 9;
+Servo myServo;
+
+const float thresholdDist = 30.48; // 1 ft in cm
+bool hasSwept = false;               // Tracks if sweep occurred
+int currentAngle = 0;                // Servo's current angle
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  myServo.attach(servoPin);
+  myServo.write(0);
+}
+
+void loop() {
+  float distance = getDistance();
+
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" cm");
+
+  if (distance > 0 && distance <= thresholdDist && !hasSwept) {
+    sweepServo(0, 180); // Sweep from 0 to 180 smoothly
+    hasSwept = true;
+    currentAngle = 180;
+  } else if ((distance == 0 || distance > thresholdDist) && hasSwept) {
+    sweepServo(180, 0); // Sweep back from 180 to 0 smoothly
+    hasSwept = false;
+    currentAngle = 0;
+  }
+
+  delay(50);
+}
+
+// Smoothly moves the servo from startAngle to endAngle
+void sweepServo(int startAngle, int endAngle) {
+  int step = (startAngle < endAngle) ? 1 : -1;
+  for (int pos = startAngle; pos != endAngle+step; pos += step) {
+    myServo.write(pos);
+    delay(10); // Adjust for smoother/faster motion
+  }
+}
+
+// Returns measured distance in centimeters
+float getDistance() {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  long duration = pulseIn(echoPin, HIGH);
+  return (duration * 0.034) / 2;
+}
+```
 
 ### Reflections on the whole: 
 
