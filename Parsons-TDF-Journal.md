@@ -451,8 +451,6 @@ Strating from scratch in Fusion was more difficult than I anticipated. The sketc
 ## Entry 1: 
 Early in this week (9/22-9/24) I prototyped the early stages of my origami project; transitioning from sketches, to workable prototypes. I also iterated on my code significantly.
 
-Initial 
-
 ### Sketches: 
 Initially I sketchedout a few concepts of what I'd like to do for the Origami assignment; two of which I've linked below. I considered doing the  bed concept, but ultimately I determined that it was too small scale and not in line with the project expectations. In retrospect, I wish I took this direction, since it would have stood out from the rest of the class on the factor of size alone. 
 
@@ -475,7 +473,7 @@ I played with a couple of different options for the code in at this stage howeve
 
 ### Video Demo:
 
-[Video WON'T Upload -- compress and drop here]
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1122500571?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Origami Demo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ### Final Iterations, creating my final form, and the documentation of my hardware and software systems. 
 
@@ -488,7 +486,6 @@ While the origami element of the project relied on fairly simple movement, I cho
 Acrylic SVG File in Adobe Illustrator. For viewing purposes, I adjusted the stroke weight to be 1pt from the <.072 required for printing. 
 
 <img width="902" height="598" alt="image" src="https://github.com/user-attachments/assets/b333422b-7aef-4cb1-ac51-dac6c2b19067" />
-
 
 ### Code
 
@@ -557,7 +554,7 @@ float getDistance() {
 
 ### Schematic
 
-
+![IMG_9042](https://github.com/user-attachments/assets/4107ed40-5ab9-4546-b584-10cd2989a203)
 
 ### Reflections on the whole: 
 
