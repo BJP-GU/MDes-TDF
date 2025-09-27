@@ -475,11 +475,22 @@ I played with a couple of different options for the code in at this stage howeve
 
 ### Video Demo:
 
+[Video WON'T Upload -- compress and drop here]
+
 ### Final Iterations, creating my final form, and the documentation of my hardware and software systems. 
+
+<img width="1126" height="603" alt="image" src="https://github.com/user-attachments/assets/a3c6c0f3-95ff-4a33-9972-5d08d3d77e1e" />
 
 ### Pivot to Acrylic: 
 
-### Code and Schematic:
+While the origami element of the project relied on fairly simple movement, I chose to elevate both its aesthetic and function by incorporating an acrylic structure. I found beauty in exposing the internal mechanism behind the wave, allowing the viewer to both see and understand the system that drives its motion. 
+
+Acrylic SVG File in Adobe Illustrator. For viewing purposes, I adjusted the stroke weight to be 1pt from the <.072 required for printing. 
+
+<img width="902" height="598" alt="image" src="https://github.com/user-attachments/assets/b333422b-7aef-4cb1-ac51-dac6c2b19067" />
+
+
+### Code
 
 Code: 
 
@@ -544,7 +555,12 @@ float getDistance() {
 }
 ```
 
+### Schematic
+
+
+
 ### Reflections on the whole: 
 
+This project was a blend of abstract design, technical prototyping, and personal inspiration, as I explored the motion and emotion of ocean waves through layered paper origami and Arduino-powered mechanics. Drawing from my own surfing experience and the elegant force of Hokusai’s wave, I used microcontroller logic to trigger dynamic movements that capture both the beauty and complexity of wave forms. The acrylic form allowed for transparent exposure of the system, adding an intentional emphasis on process, not just outcome. 
 
-
+On the whole, I found the project to be an excellent reminder about how much we can achieve in just a few day or even hours time. I'm looking forward to evolving my prototyping and craft skills to build more technical and complex systems throughout the semester. 
