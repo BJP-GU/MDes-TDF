@@ -561,3 +561,10 @@ float getDistance() {
 This project was a blend of abstract design, technical prototyping, and personal inspiration, as I explored the motion and emotion of ocean waves through layered paper origami and Arduino-powered mechanics. Drawing from my own surfing experience and the elegant force of Hokusai’s wave, I used microcontroller logic to trigger dynamic movements that capture both the beauty and complexity of wave forms. The acrylic form allowed for transparent exposure of the system, adding an intentional emphasis on process, not just outcome. 
 
 On the whole, I found the project to be an excellent reminder about how much we can achieve in just a few day or even hours time. I'm looking forward to evolving my prototyping and craft skills to build more technical and complex systems throughout the semester. 
+
+## Week 5 (9/29): Expressive Mechanics Prototyping & Exploration
+### Concept Sketches
+![IMG_9094](https://github.com/user-attachments/assets/585849f5-d0d9-4188-9f91-3bcc51e832f6)
+![IMG_9093](https://github.com/user-attachments/assets/959a9670-c1b9-461f-9a2d-d708b3535c0e)
+
+### Notes:
