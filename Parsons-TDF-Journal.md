@@ -562,9 +562,13 @@ This project was a blend of abstract design, technical prototyping, and personal
 
 On the whole, I found the project to be an excellent reminder about how much we can achieve in just a few day or even hours time. I'm looking forward to evolving my prototyping and craft skills to build more technical and complex systems throughout the semester. 
 
-## Week 5 (9/29): Expressive Mechanics Prototyping & Exploration
+## Week 6 (9/29): Expressive Mechanics Prototyping & Exploration
 ### Concept Sketches
 ![IMG_9094](https://github.com/user-attachments/assets/585849f5-d0d9-4188-9f91-3bcc51e832f6)
 ![IMG_9093](https://github.com/user-attachments/assets/959a9670-c1b9-461f-9a2d-d708b3535c0e)
+![IMG_9155](https://github.com/user-attachments/assets/83be56a1-3c97-4189-a3ac-d964c797a165)
 
 ### Notes:
+I decided to design an evolution of my last project––the Paper Wave––so that when a there is some input stemming from the computer vision program, the wave it acuated. Per my concept sketches, I intend to drive a rack and pinion system with a servo, which has a wave like structure mounted on it, which pushes a living hinge, forming a wave. For the living hinge, like in my last project, I would like to use acrylic as it resembles water. However I blieve the acrylic will not be tolerant enough to handle the wave shape. 
+
+
