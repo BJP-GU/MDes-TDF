@@ -569,7 +569,7 @@ On the whole, I found the project to be an excellent reminder about how much we 
 ![IMG_9155](https://github.com/user-attachments/assets/83be56a1-3c97-4189-a3ac-d964c797a165)
 
 ### Reflection/Notes:
-I decided to design an evolution of my last project––the Paper Wave––so that when a there is some input stemming from the computer vision program, the wave it acuated. Per my concept sketches, I intend to drive a rack and pinion system with a servo, which has a wave like structure mounted on it, which pushes a living hinge, forming a wave. For the living hinge, like in my last project, I would like to use acrylic as it resembles water. However I blieve the acrylic will not be tolerant enough to handle the wave shape. 
+I decided to design an evolution of my last project––the Paper Wave––so that when a there is some input stemming from the computer vision program, the wave it acuated. Per my concept sketches, I intend to drive a rack and pinion system with a servo, which has a wave like structure mounted on it, which pushes a living hinge, forming a wave. For the living hinge, like in my last project, I would like to use acrylic as it resembles water. However I believe the acrylic will not be tolerant enough to handle the wave shape. 
 
 ## Week 6 (9/31): Understanding Suhu's P5JS Code and exploring CV Solution Options
 ### Code + Screens
@@ -579,7 +579,7 @@ Understanding the code we we're given:
 
 https://www.perplexity.ai/search/2a7ed7be-5623-430f-bb92-d0f5031f4e23
 
-Using Perlexity to help debug my P5Js x Arduino Issues: 
+Using Perplexity to help debug my P5Js x Arduino Issues: 
 
 https://www.perplexity.ai/search/8f09cd1a-a70a-4328-b48c-ff1e9a67cdc0\
 
