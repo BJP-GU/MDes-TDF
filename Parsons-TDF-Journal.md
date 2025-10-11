@@ -590,8 +590,16 @@ https://chatgpt.com/share/68e3e2e9-822c-8010-9e35-796fe1ef163b
 ### Reflections
 The timeline for our project was relatively short, so I focused my attention on what I was particularly interested in learning about most; compter vision / P5JS. I'd like to use P5JS for nore projects in the future, so I found it helpful to grok how the computer vision tech early. 
 
+Using "off the shelf" pretrained models like, Google's PoseNet, allowed for me to quickly iterate through code solutions without having to train any new models for my intended use. Now relaizing how accessible and easy to use these pretrained models are, I am eager to explore more of them in projects going forward. 
+
 ## Week 7 (10/5)
 ### Determinging Mechanisms, Designing Mechanisms, and 3D Printing
+
+For this project, I focused on designing small functional components to drive the mechanism as well as house the components. To do so I used a mix of 3D printing––crafted in Fusion––and lazer cutting––crafted in Adobe Illustrator. 
+
+Adobe Illustrator Files (I initially designed and cut an acrylic case for the hardware, but ultimately decided not to use it as it didn't fit the minimal aesthetic I was aiming for). 
+
+<img width="417" height="742" alt="image" src="https://github.com/user-attachments/assets/eaf9c5d6-8c03-4126-a105-e0cab9f1b584" />
 
 
 ### Reflection
@@ -601,5 +609,13 @@ The timeline for our project was relatively short, so I focused my attention on 
 https://www.perplexity.ai/search/6b5c6613-8b8b-4e33-aa74-471a2e68a0ca
 
 ### Expressive Mechanics Video + Diagram
+
+Video: 
 https://youtu.be/yonCoc0AZ3E
+
+Diagram:  
+<img width="1171" height="500" alt="image" src="https://github.com/user-attachments/assets/8efa3ea4-ab08-469e-941a-1c71a038f372" />
+
+
+
 
