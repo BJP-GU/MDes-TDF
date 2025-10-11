@@ -597,12 +597,18 @@ Using "off the shelf" pretrained models like, Google's PoseNet, allowed for me t
 
 For this project, I focused on designing small functional components to drive the mechanism as well as house the components. To do so I used a mix of 3D printing––crafted in Fusion––and lazer cutting––crafted in Adobe Illustrator. 
 
-Adobe Illustrator Files (I initially designed and cut an acrylic case for the hardware, but ultimately decided not to use it as it didn't fit the minimal aesthetic I was aiming for). 
+**Adobe Illustrator Files** (I initially designed and cut an acrylic case for the hardware, but ultimately decided not to use it as it didn't fit the minimal aesthetic I was aiming for). 
 
 <img width="417" height="742" alt="image" src="https://github.com/user-attachments/assets/eaf9c5d6-8c03-4126-a105-e0cab9f1b584" />
 
+**Fusion Files ** –– Including Rack and Pinion and Servo/Arduino Mount
+
+<img width="761" height="479" alt="image" src="https://github.com/user-attachments/assets/5b1e8ddb-e98a-49ff-aeb6-11f6cffbd67d" />
+<img width="687" height="473" alt="image" src="https://github.com/user-attachments/assets/affdc1dd-bbe7-4a69-b402-db85303022de" />
+<img width="1023" height="716" alt="image" src="https://github.com/user-attachments/assets/90cd6cf1-9532-4e73-9f5c-588665c5a4ce" />
 
 ### Reflection
+I'm becoming much more comfortable designing in Fusion and 3D printing using Prusa's. I think I want to start exploring other 3D rendering softwares like Rhino next. 
 
 ## Week 7 (10/8, 10/9)
 ### Iterating on Final P5.JS Code and Final Form
@@ -611,7 +617,7 @@ https://www.perplexity.ai/search/6b5c6613-8b8b-4e33-aa74-471a2e68a0ca
 ### Expressive Mechanics Video + Diagram
 
 Video: 
-https://youtu.be/yonCoc0AZ3E
+[https://youtu.be/yonCoc0AZ3E](https://youtu.be/yonCoc0AZ3E?si=v62U-6BhH0Y1XrVg)
 
 Diagram:  
 <img width="1171" height="500" alt="image" src="https://github.com/user-attachments/assets/8efa3ea4-ab08-469e-941a-1c71a038f372" />
