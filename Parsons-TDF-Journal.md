@@ -608,7 +608,7 @@ For this project, I focused on designing small functional components to drive th
 <img width="1023" height="716" alt="image" src="https://github.com/user-attachments/assets/90cd6cf1-9532-4e73-9f5c-588665c5a4ce" />
 
 ### Reflection
-I'm becoming much more comfortable designing in Fusion and 3D printing using Prusa's. I think I want to start exploring other 3D rendering softwares like Rhino next. 
+I'm becoming much more comfortable designing in Fusion and 3D printing using Prusa's. I think I want to start exploring other 3D rendering softwares like Rhino next. As my interests grow in small hardware elctronics and functional robotics mechanisms––a field I am very bullish on in the coming years––I want to become very proficient at modeling fully original mechanisms which are functional, strong, and aesteticly pleasing. Something I have yet to unlock is how to develop and design a strong personal style through 3D printed forms. 
 
 ## Week 7 (10/8, 10/9)
 ### Iterating on Final P5.JS Code and Final Form
@@ -623,5 +623,5 @@ Diagram:
 <img width="1171" height="500" alt="image" src="https://github.com/user-attachments/assets/8efa3ea4-ab08-469e-941a-1c71a038f372" />
 
 
-
-
+### Reflection on the Expressive Mechanics Project: 
+Although the project evolved from my original vision—a water-like wave form—to a hand-waving gesture, this transformation came through continuous iteration and creative effort, rather than a dramatic change in direction. In the end, I succeeded in building both the functional software and a mechanism featuring multiple-linkage movement.
