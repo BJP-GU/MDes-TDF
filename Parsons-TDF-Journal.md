@@ -600,6 +600,6 @@ The timeline for our project was relatively short, so I focused my attention on 
 ### Iterating on Final P5.JS Code and Final Form
 https://www.perplexity.ai/search/6b5c6613-8b8b-4e33-aa74-471a2e68a0ca
 
-### Reflection
-
+### Expressive Mechanics Video + Diagram
+https://youtu.be/yonCoc0AZ3E
 
