@@ -1,6 +1,6 @@
 # MDes-TDF
 
-## Week 2 (9/2): Hello World + Serial Blinking
+## [Week 2 (9/2): Hello World + Serial Blinking]
 ### Code + Serial Blinking
 
 https://github.com/user-attachments/assets/11079986-5b01-4e25-a491-b1ba81671e10
@@ -39,7 +39,7 @@ delay(1000);
 }
 ```
 
-## Week 3 (9/8): Write a program to flash the onboard LED while printing Hello World to serial
+## [Week 3 (9/8): Write a program to flash the onboard LED while printing Hello World to serial]
 
 ### Experiment and PLAY!
 Make “something interesting” happen with:
@@ -81,7 +81,7 @@ void loop() {
 }
 
 ```
-## Week 3 (9/10): Designing & Lazer-Printing a Ring
+## [Week 3 (9/10): Designing & Lazer-Printing a Ring]
 
 ### Using typography to Design a Ring
 Lately, I have been exploring fun typefaces. One which I came across this year is called Hoffman; the namesake of Armin Hoffman. Hoffman Typeface was not created by Armin Hoffman himself, but was inspired by his "Graphic Design Manual." In his manual he conducts an experiment in which he suggests all glyphs can be hand-drawn using circle tangents; later Nguyen and Gobber digitized these methods for broader contemporary use.
@@ -116,7 +116,7 @@ In finishing the ring, I learned the valuable lesson of when NOT to take a risk 
 
 
 
-## Week 4 (9/15): Arduino RGB Light, 
+## [Week 4 (9/15): Arduino RGB Light]
 
 ## RGB Blinking
 ### Code
@@ -447,7 +447,7 @@ Strating from scratch in Fusion was more difficult than I anticipated. The sketc
 
 <img width="884" height="275" alt="image" src="https://github.com/user-attachments/assets/b270c002-a5c4-4db7-98d7-8c7ab2fb6f9c" />
 
-## Week 5 (9/22): Origami Project 
+## [Week 5 (9/22): Origami Project]
 ## Entry 1: 
 Early in this week (9/22-9/24) I prototyped the early stages of my origami project; transitioning from sketches, to workable prototypes. I also iterated on my code significantly.
 
@@ -468,7 +468,7 @@ Prototyping quickly is fun -- especially knowing that this won't be the unltimat
 
 I played with a couple of different options for the code in at this stage however, they ultimately proved to be too difficult to implement given the hardware and the intended setting for the piece (our demo). One idea I tried out what an effect which adjusted the waves form based off of proximity to the wave e.g., if someone was 5ft away it the servo would rotate 1/5 of the way to 180 degrees, sequencing in 1/5 increments all the way to <1ft away. Unfortunately, the ultra-sonic sensor senses things in a wide cone, thus I found this almost impossible to work in a setting where many people are in proximity of the wave.
 
-## Entry 2:
+## [Week 5 (9/24)]
 ## Project 1: Emotive Origami
 
 ### Video Demo
@@ -562,8 +562,8 @@ This project was a blend of abstract design, technical prototyping, and personal
 
 On the whole, I found the project to be an excellent reminder about how much we can achieve in just a few day or even hours time. I'm looking forward to evolving my prototyping and craft skills to build more technical and complex systems throughout the semester. 
 
-## Week 6 (9/29): Expressive Mechanics Prototyping & Exploration
-### Concept Sketches
+## [Week 6 (9/29): Expressive Mechanics Prototyping & Exploration]
+### Concept Sketches - Exploring Expressive Mechanics Wave Movements and Mechanisms
 ![IMG_9094](https://github.com/user-attachments/assets/585849f5-d0d9-4188-9f91-3bcc51e832f6)
 ![IMG_9093](https://github.com/user-attachments/assets/959a9670-c1b9-461f-9a2d-d708b3535c0e)
 ![IMG_9155](https://github.com/user-attachments/assets/83be56a1-3c97-4189-a3ac-d964c797a165)
@@ -571,7 +571,7 @@ On the whole, I found the project to be an excellent reminder about how much we 
 ### Reflection/Notes:
 I decided to design an evolution of my last project––the Paper Wave––so that when a there is some input stemming from the computer vision program, the wave it acuated. Per my concept sketches, I intend to drive a rack and pinion system with a servo, which has a wave like structure mounted on it, which pushes a living hinge, forming a wave. For the living hinge, like in my last project, I would like to use acrylic as it resembles water. However I believe the acrylic will not be tolerant enough to handle the wave shape. 
 
-## Week 6 (9/31): Understanding Suhu's P5JS Code and exploring CV Solution Options
+## [Week 6 (9/31): Understanding Suhu's P5JS Code and exploring CV Solution Options]
 ### Code + Screens
 Perplexity Thread(s): 
 
@@ -592,7 +592,7 @@ The timeline for our project was relatively short, so I focused my attention on 
 
 Using "off the shelf" pretrained models like, Google's PoseNet, allowed for me to quickly iterate through code solutions without having to train any new models for my intended use. Now relaizing how accessible and easy to use these pretrained models are, I am eager to explore more of them in projects going forward. 
 
-## Week 7 (10/5)
+## [Week 7 (10/5)]
 ### Determinging Mechanisms, Designing Mechanisms, and 3D Printing
 
 For this project, I focused on designing small functional components to drive the mechanism as well as house the components. To do so I used a mix of 3D printing––crafted in Fusion––and lazer cutting––crafted in Adobe Illustrator. 
@@ -610,7 +610,7 @@ For this project, I focused on designing small functional components to drive th
 ### Reflection
 I'm becoming much more comfortable designing in Fusion and 3D printing using Prusa's. I think I want to start exploring other 3D rendering softwares like Rhino next. As my interests grow in small hardware elctronics and functional robotics mechanisms––a field I am very bullish on in the coming years––I want to become very proficient at modeling fully original mechanisms which are functional, strong, and aesteticly pleasing. Something I have yet to unlock is how to develop and design a strong personal style through 3D printed forms. 
 
-## Week 7 (10/8, 10/9)
+## [Week 7 (10/8, 10/9)]
 ### Iterating on Final P5.JS Code and Final Form
 https://www.perplexity.ai/search/6b5c6613-8b8b-4e33-aa74-471a2e68a0ca
 
