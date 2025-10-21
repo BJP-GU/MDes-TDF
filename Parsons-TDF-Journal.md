@@ -625,3 +625,15 @@ Diagram:
 
 ### Reflection on the Expressive Mechanics Project: 
 Although the project evolved from my original vision—a water-like wave form—to a hand-waving gesture, this transformation came through continuous iteration and creative effort, rather than a dramatic change in direction. In the end, I succeeded in building both the functional software and a mechanism featuring multiple-linkage movement.
+
+## [Week 8 (10/14, 10/17)]
+### Setting up ESP32 per Roopa's tutorial, Exploring Ambient Display Options
+
+### Setting up ESP32 (10/14)
+Generally speaking the process was fairly smooth, aside from a few points of confusion e.g., the name of the ESP32 board in Arduino's IDE. I, like everyone else, experienced the issue of getting the ESP32 to immediately work with the WIFI at Berkeley due to the fact this is a newlt registered device.
+
+### Exploring Ambient Display Options (10/17) 
+
+## [Week 9 (10/20, 10/24)]
+### ...
+
