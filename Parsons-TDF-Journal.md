@@ -630,10 +630,50 @@ Although the project evolved from my original vision—a water-like wave form—
 ### Setting up ESP32 per Roopa's tutorial, Exploring Ambient Display Options
 
 ### Setting up ESP32 (10/14)
-Generally speaking the process was fairly smooth, aside from a few points of confusion e.g., the name of the ESP32 board in Arduino's IDE. I, like everyone else, experienced the issue of getting the ESP32 to immediately work with the WIFI at Berkeley due to the fact this is a newlt registered device.
+Generally speaking the process was fairly smooth, aside from a few points of confusion e.g., the name of the ESP32 board in Arduino's IDE. I experienced the "-1" error, like many others, but eventually the devcie connected and resolved the issue without further intervention. 
 
-### Exploring Ambient Display Options (10/17) 
+### Exploring Ambient Display Options (10/17): 
+For this project, I am motivated to do an ambient display which a) solves a real problem / has a practical use, b) uses sound as the display medium. 
+
+I am inspired by videos which combie moving elements with sound (see example: https://www.instagram.com/reel/DOgHmxvCCfm/)
+
+One way which I believe we (me a Jake S.) can use moving objects to create sound is by tapping into a REST API / Web Client that pulls in a live video feed and we assign values of sound to passing/moving objects. To test this out, I used an opensource video-client that my brother posted to GitHub. (He happened to be writing this code for a personal project of his that same week that we recieved the project prompt -- so I leveraged it to pull in a video feed). 
+
+Video Feed:
+https://hdontap.com/stream/703517/hanalei-bay-resort-kauai-hawaii-live-webcam/
+
+Web-Client: 
+https://github.com/rileysparsons/webcam-client
+
+#### Reflection: 
+Jake and I branched the web-client code and played around with deriving sound from the passing waves in the video in real time. We we're able to pull in the live video feed locally and quickly-vibe-code our way to a semi-functional solution which used: 
+
+`from lib.client import WebcamStream
+from lib.motion_detector import WaveMotionDetector
+from lib.audio_synth import DopplerAudioSynthesizer, AudioConfig`
+
+-- however, the addiiotn of live sythesizing of sounds from the motion of the video was too much for even my Mac to handle; it crashed frequently even after reducing the stream quality. 
+
+We determined that the ESP32 will not be able to handle the processing of a live-video feed and that another sound-based solution will be required. 
 
 ## [Week 9 (10/20, 10/24)]
-### ...
+### Exploring alternative options for transforming API inputs into Sound Outputs
+
+Jake suggested the use of the BART API as an input. We explored the real-time data that we can recieve from the API and based on our learnings from the live-video-client, we determined that the simple inputs of the bart API (e.g., distance from station) would be efficent enough to run on the ESP32 and act as an input for sound. 
+
+BART API: 
+https://api.bart.gov/docs/etd/etd.aspx
+
+At this stage our current thinking is this: 
+
+Sound = a stem of a track (stems are like building blocks for music: https://www.epidemicsound.com/blog/what-are-stems-in-music-production/)
+
+- Use the BART API to communicate the specified trains distance from a specified station. 
+- When it is 4 stops away from "y" station, play one sound continually in a loop. 
+- When it is 3 stops away from "y" station, layer on an additional sound in a loop.
+- etc...
+
+As the train gets closer, the the tracks will build on eachother -- creating a sense of urgency or presence for the listener -- indicating that they need to catch the train. 
+
+### Prototyping our BART idea (10/23-24)
 
