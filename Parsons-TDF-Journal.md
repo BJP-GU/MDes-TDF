@@ -690,9 +690,15 @@ In concept, it seemed relatively easy to implement a sound output based on our B
 
 ### Implementing the BART API w/ the Mozzi Sound Solution
 #### 10/26: Designing the Mozzi Sound 
-
+We chose the Mozzi sound synthesis library for our project because it allowed us to generate rich, real-time audio directly on the ESP32 using minimal hardware resources. By modulating the frequency of layered sine waves, we sonify the time until the next RED LINE train’s arrival—raising the pitch as the train gets closer. This mapping harnesses human sensitivity to higher frequencies to convey urgency: as the sound becomes more intense and higher-pitched, listeners naturally sense the train’s approach and the need to act. Mozzi’s flexibility also enabled us to design a textured, ambient sound rather than a simple tone, making the auditory feedback both informative and pleasant in a home environment.
 
 #### 10/27-30: Connecting the Speaker, Amp, and Building the Enclosure
+
+
+
+#### Diagram of Final Solution: 
+
+<img width="861" height="928" alt="image" src="https://github.com/user-attachments/assets/07ce290e-d2cb-44b9-9435-c13882fbfc49" />
 
 
 
