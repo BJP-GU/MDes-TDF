@@ -639,6 +639,9 @@ I am inspired by videos which combie moving elements with sound (see example: ht
 
 One way which I believe we (me a Jake S.) can use moving objects to create sound is by tapping into a REST API / Web Client that pulls in a live video feed and we assign values of sound to passing/moving objects. To test this out, I used an opensource video-client that my brother posted to GitHub. (He happened to be writing this code for a personal project of his that same week that we recieved the project prompt -- so I leveraged it to pull in a video feed). 
 
+### Intial Concept Information Flow: 
+<img width="1110" height="198" alt="image" src="https://github.com/user-attachments/assets/8db8d5c0-edba-437d-aa9e-3cf215e72bfa" />
+
 Video Feed:
 https://hdontap.com/stream/703517/hanalei-bay-resort-kauai-hawaii-live-webcam/
 
@@ -676,4 +679,20 @@ Sound = a stem of a track (stems are like building blocks for music: https://www
 As the train gets closer, the the tracks will build on eachother -- creating a sense of urgency or presence for the listener -- indicating that they need to catch the train. 
 
 ### Prototyping our BART idea (10/23-24)
+#### Initial Prototyping:
+
+Initially, we prototyped our BART idea by connecting up to the BART API and transmitting the information (Train time-to-arrival) to the onboard Neo Pixel; Red = 20+ mins away, Green = 0 Mins away). We used the neo-pixel to prove out the solution, as it was an easy low-investment way to validate our concept. 
+
+Our prototype idea proved to be very effective, proving that we could use the BART API data to achieve our high-level objective. 
+
+#### Implementing a Sound Solution
+In concept, it seemed relatively easy to implement a sound output based on our BART API data -- however this was not the case. We found that there were significant limitations in terms of what we can play through the ESP32 i.e, we can't play more than one file at a time. We met multiple times with Sudhu to explore solution options using the ESP32 as our micro-controller -- ultimately we decided to use a sound library in Arduino called Mozzi. 
+
+### Implementing the BART API w/ the Mozzi Sound Solution
+#### 10/26: Designing the Mozzi Sound 
+
+
+#### 10/27-30: Connecting the Speaker, Amp, and Building the Enclosure
+
+
 
