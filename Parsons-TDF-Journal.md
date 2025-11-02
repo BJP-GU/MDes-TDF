@@ -632,7 +632,7 @@ Although the project evolved from my original vision—a water-like wave form—
 ### Setting up ESP32 (10/14)
 Generally speaking the process was fairly smooth, aside from a few points of confusion e.g., the name of the ESP32 board in Arduino's IDE. I experienced the "-1" error, like many others, but eventually the devcie connected and resolved the issue without further intervention. 
 
-### Exploring Ambient Display Options (10/17): 
+### Ambient Display Project: Exploring Ambient Display Options (10/17): 
 For this project, I am motivated to do an ambient display which a) solves a real problem / has a practical use, b) uses sound as the display medium. 
 
 I am inspired by videos which combie moving elements with sound (see example: https://www.instagram.com/reel/DOgHmxvCCfm/)
