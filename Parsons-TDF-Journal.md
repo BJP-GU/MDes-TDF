@@ -694,6 +694,7 @@ We chose the Mozzi sound synthesis library for our project because it allowed us
 
 #### 10/27-30: Connecting the Speaker, Amp, and Building the Enclosure
 
+When connecting the ESP32 to the amplifier and speaker, we ran into several challenges. Through troubleshooting, we learned the intricacies of setting up an amplifier, powering it externally from the microcontroller, and soldering the connections to the external speaker. Initially, we connected the ESP32 to the amplifier and then to the speaker, but no sound output came through. To diagnose the issue, we consulted Gary Gin, who helped us use an oscilloscope to trace the signal flow from the microcontroller through the amplifier. After confirming that a weak signal was present, we decided to power the amplifier externally with a 5V charger—despite the documentation suggesting otherwise—which ultimately resolved the problem.
 
 
 #### Diagram of Final Solution: 
