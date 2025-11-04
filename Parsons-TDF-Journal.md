@@ -694,8 +694,11 @@ We chose the Mozzi sound synthesis library for our project because it allowed us
 
 #### 10/27-30: Connecting the Speaker, Amp, and Building the Enclosure
 
+#### Speaker + Amp
 When connecting the ESP32 to the amplifier and speaker, we ran into several challenges. Through troubleshooting, we learned the intricacies of setting up an amplifier, powering it externally from the microcontroller, and soldering the connections to the external speaker. Initially, we connected the ESP32 to the amplifier and then to the speaker, but no sound output came through. To diagnose the issue, we consulted Gary Gin, who helped us use an oscilloscope to trace the signal flow from the microcontroller through the amplifier. After confirming that a weak signal was present, we decided to power the amplifier externally with a 5V charger—despite the documentation suggesting otherwise—which ultimately resolved the problem.
 
+#### Building the Enclosure
+Jake and I decided to build the enclosure from a hardwood, so as to maintain a sleek and elegant aesthetic. We sourced hard wood from CED and constructed the enclosure there. Basing the dimensions off of our initial prototype, we joined, planed, and cut our wood to meet our desired form. Having not spent considerable time in the CED woodship, it was nice to use each of the tools in depth over the course of multiple days. Ultimately, the form came together easily due to careful planning ahead of time. One hiccup for us was installing the magnets into the lid of the box, as they we're difficult to fit and difficult to pair correctly with the correct corresponding magnet. 
 
 #### Diagram of Final Solution: 
 
