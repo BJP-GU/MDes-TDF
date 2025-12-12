@@ -704,5 +704,9 @@ Jake and I decided to build the enclosure from a hardwood, so as to maintain a s
 
 <img width="861" height="928" alt="image" src="https://github.com/user-attachments/assets/07ce290e-d2cb-44b9-9435-c13882fbfc49" />
 
+#### Beginning of Final Project Documentation
+
+
+
 
 
