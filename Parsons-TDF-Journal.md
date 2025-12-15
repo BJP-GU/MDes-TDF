@@ -769,7 +769,7 @@ We’ve got the ANO Encoder wheel working with the ESP32-S2 Screen. We’re able
 
 #### Nov 23 - 29 (Thanksgiving): 1 entry
 
-Entry 1: 
+#### Entry 1: 
 At this point, we have the ANO encoder wheel and ESP32-S2 talking to each other reliably, and they are triggering functions in a Python program without issues. The next step is to map our DJ controls to specific effects and filters, so that the hardware inputs actually shape the sound in expressive ways.
 
 
@@ -781,7 +781,7 @@ At this point we tested out a quick MVP of a CV model trained on a dataset of ha
 <img width="656" height="1051" alt="image" src="https://github.com/user-attachments/assets/9ea4d99d-c047-44a0-b09c-8afde5470543" />
 
 #### Nov 30 - Dec 6: 2 entries
-#### at Entry 1: 
+#### Entry 1: 
 
 We’re really cooking this week. 
 
