@@ -706,6 +706,115 @@ Jake and I decided to build the enclosure from a hardwood, so as to maintain a s
 
 ### Beginning of Final Project Documentation
 
+#### Nov 2 - 8: 2 entries
+
+#### Entry 1: Alignment on Concept Proposal
+
+This week, we developed design proposals for our final project. I pitched a portable, phone-based DJ mixing device—something simple, approachable, and intuitive. My motivation came from noticing how most DJ gear feels clunky, intimidating, and overpriced.  
+
+Two of my classmates, Thomas and Kenya, resonated with the idea and decided to join me for the project.
+
+<img width="457" height="700" alt="image" src="https://github.com/user-attachments/assets/af4a4df0-afb6-4c56-95a7-26613643e365" />
+
+
+#### Entry 2: 
+
+
+Thomas, Kenya, and I met as a group for the first time to align on the project scope, set expectations for our individual learning goals, and discuss our vision for how this product might take shape.  
+
+While we quickly agreed on the problem statement, our ideas for the solution diverged. One key question came up: “Do we need to design something that resembles a modern DJ controller?” I pushed back—“we absolutely do not.” That moment essentially set aside my initial proposal, but the core problem remained the same.
+
+
+
+Also at this stage we filled in our working document, role, and experiment schedule. (https://docs.google.com/document/d/1Cg-rDbTFzHdIgYWKouC2SbulTZQSL9ghxQhU_Gmd3C8/edit?tab=t.0)
+
+Key experiments include: 
+EXP.1 [11.11] | Develop Mixing Browser
+EXP.2 [11.13] | Create Board Prototype
+
+#### Nov 9 - 15: 2 entries
+
+#### Entry 1: 
+
+Early in this week, our group aligned on the following basic schematic for our product: 
+
+<img width="831" height="602" alt="image" src="https://github.com/user-attachments/assets/e90b70db-ff40-45b3-86ad-7ec6d5f6d0c9" />
+
+In short, we’re going to make a controller (form factor tbd at this point) that will control a powerful audio mixing program running on laptop or phone if technically feasible. The controller and its inputs will be novel in some way, but in the backend we’ll use established mixing software practices such as C++. 
+
+#### Entry 2: 
+
+We set up a basic program in Python and a basic circuit using an ESP32-S2 to play and pause an audio file on the computer — proving our idea that we can use an ESP32 controller to control functions in Python or C++ running on a laptop. 
+
+After doing this, we added in another function which was “skip”
+
+Since our last meeting, we also wrote out some psuedo code that will be a guiding document for our MVP build.
+
+<img width="1229" height="699" alt="image" src="https://github.com/user-attachments/assets/5aacc48c-d3e3-4407-8fc2-77415d91966b" />
+
+#### Nov 16 - 22: 2 entries
+
+#### Entry 1: 
+
+We decided to move forward using an ESP32, a digital display, and an encoder wheel to handle our core hardware functions. After ordering the parts, we began setting them up.  
+
+We ran into significant issues getting the ANO encoder wheel to communicate properly with the ESP32-S2 TFT display. After some troubleshooting with Chris and Cody in the makerspace, we discovered the problem: the firmware on our version of the ANO encoder was brand new, and documentation was scarce. In our code, we had been referencing it using the old firmware ID, which caused the connection errors.
+
+<img width="494" height="324" alt="image" src="https://github.com/user-attachments/assets/d8b6d908-1553-4ddb-b569-6abb40444adb" />
+
+
+#### Entry 2: 
+
+We’ve got the ANO Encoder wheel working with the ESP32-S2 Screen. We’re able to play, browse, select/play, and pause audio files using a Python program running locally on my mac! This is the foundational tech we need to have in place to bring our vision to life. 
+
+#### Nov 23 - 29 (Thanksgiving): 1 entry
+
+Entry 1: 
+At this point, we have the ANO encoder wheel and ESP32-S2 talking to each other reliably, and they are triggering functions in a Python program without issues. The next step is to map our DJ controls to specific effects and filters, so that the hardware inputs actually shape the sound in expressive ways.
+
+
+To accomplish this, we decided to bring computer vision back into the system as an additional layer of control, building on earlier experiments from a previous phase of the project. Here is a high-level map of how all the component parts of our system will interact, including the CV module and its connection to the rest of the pipeline.
+<img width="241" height="311" alt="image" src="https://github.com/user-attachments/assets/a48fd82b-ed41-4a76-bd22-9aa2134399a9" />
+
+At this point we tested out a quick MVP of a CV model trained on a dataset of hands — however, the result was not promising despite training 30 epochs. We went back to the drawing board to figure out how to implement the CV. 
+
+<img width="656" height="1051" alt="image" src="https://github.com/user-attachments/assets/9ea4d99d-c047-44a0-b09c-8afde5470543" />
+
+#### Nov 30 - Dec 6: 2 entries
+#### at Entry 1: 
+
+We’re really cooking this week. 
+
+[Insert two video of hand/arm DJ-ing]
+
+At this point, we’re about one week out from the showcase and here is the current state out our product: 
+The handheld device is functional and working as expected (ESP32-S2 + ANO Encoder Wheel). 
+The handheld device housing has not yet been designed, but we have a number of ideas and sketches. 
+The computer vision mixing software is working decently well, but not 100% and only in isolation — it has not been integrated with the handheld controller. 
+
+
+
+
+We’ve proven that each of the component parts of our product work in isolation, but we don’t yet know if they work together. Below is a table of how we’d ideally like everything to work. This was out blueprint for the week of work ahead. 
+
+<img width="571" height="301" alt="image" src="https://github.com/user-attachments/assets/dd7ca570-79bb-4798-94d8-bc24d40720ae" />
+
+##### Entry 2: 
+
+Pulling everything together. 
+
+Thomas and I pulled multiple all nighters getting each component of the product to seamlessly integrate with the other components. I primarily focused on creating a C++ program which “grabbed” the audio files from a local directory and passed them through to a C++ program called the “DJ engine” where effects and EQ adjustments can be applied to the playback. Thomas, worked on taking my work and integrating it with a computer vision program in which the person's hand position adjusted variables like EQ low, EQ mid, EQ High, Echo Filter, etc. 
+
+Kenya, primarily worked on the physical handheld controller — so I haven’t spoken much about it thus far. During the final stretch of the project, we made the decision to use hands (wrists) to be the variable input in the CV program, as fingers proved to be unreliable. This change brought on the need to change the controller form so that I can be handheld,rather than sit flat on the deck — allowing the user to distance themselves from the computer in order to be fully in frame. We evolved the controller to reflect this need. 
+
+<img width="249" height="505" alt="image" src="https://github.com/user-attachments/assets/6e544341-68c5-443c-9d63-9c1b0c5d136b" />
+
+<img width="314" height="417" alt="image" src="https://github.com/user-attachments/assets/dae8adc0-121e-4531-a424-3be4db31e971" />
+
+<img width="994" height="552" alt="image" src="https://github.com/user-attachments/assets/7ad4fbd0-ab1b-4dce-89ac-889d5857b0f3" />
+
+All Code Files: https://drive.google.com/drive/folders/1A_Swwtk-kxMlpBCyj5jOo6doXejhetSI 
+ReadMe File: https://docs.google.com/document/d/1qSWzDTfTvPCHDegDlyCXuQ8SO4iqZokxV9ybkzwjkXk/edit?tab=t.0
 
 
 
