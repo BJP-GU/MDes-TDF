@@ -816,6 +816,12 @@ Kenya, primarily worked on the physical handheld controller — so I haven’t s
 All Code Files: https://drive.google.com/drive/folders/1A_Swwtk-kxMlpBCyj5jOo6doXejhetSI 
 ReadMe File: https://docs.google.com/document/d/1qSWzDTfTvPCHDegDlyCXuQ8SO4iqZokxV9ybkzwjkXk/edit?tab=t.0
 
+Final Solution Diagram: 
+
+<img width="1598" height="572" alt="image" src="https://github.com/user-attachments/assets/06abc434-abfd-4e60-a7db-7254047af701" />
+
+
+
 
 
 
